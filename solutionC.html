@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karyon Reton - Royal Emerald Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;700&display=swap');
+
+        :root {
+            --emerald: #064E3B; /* 深宝石绿 */
+            --gold: #D4AF37;    /* 皇家金 */
+            --paper: #F9F7F2;   /* 象牙质感底色 */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* A4 纸张模拟 */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            background-color: var(--paper);
+            margin: 10mm auto;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 模拟背景纹理 */
+        .page::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+        h1, h2, .font-serif {
+            font-family: 'Marcellus', serif;
+        }
+
+        .emerald-gradient {
+            background: linear-gradient(135deg, #064E3B 0%, #022C22 100%);
+        }
+
+        .gold-border {
+            border: 1px solid var(--gold);
+        }
+
+        .img-placeholder {
+            background-color: rgba(6, 78, 59, 0.05);
+            border: 1px dashed rgba(6, 78, 59, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--emerald);
+            font-style: italic;
+            border-radius: 4px;
+        }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; page-break-after: always; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 正面：品牌与实力 -->
+    <div class="page p-12">
+        <!-- 顶部装饰条 -->
+        <div class="flex justify-between items-center mb-8 border-b border-emerald-900/10 pb-4">
+            <div>
+                <h1 class="text-3xl font-bold text-emerald-900 tracking-widest">KARYON RETON</h1>
+                <p class="text-[10px] uppercase tracking-[0.4em] text-emerald-700">Excellence in Royal Textiles</p>
+            </div>
+        </div>
+
+        <!-- 英雄区域 -->
+        <div class="relative h-64 emerald-gradient rounded-xl overflow-hidden border-b-4 border-gold shadow-2xl flex items-center justify-center mb-10">
+            <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at center, #D4AF37 1px, transparent 1px); background-size: 30px 30px;"></div>
+            <div class="text-center z-10 px-6">
+                <h2 class="text-white text-5xl mb-3 tracking-tight">The Royal Touch of <br><span class="text-gold italic">Comfort & Elegance</span></h2>
+                <p class="text-gold/80 text-sm italic tracking-widest">"Crafted for the Discerning Tastes of Global Markets"</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-10">
+            <!-- 左侧详情 -->
+            <div class="col-span-7 space-y-8">
+                <div>
+                    <h3 class="text-xl font-bold text-emerald-900 border-l-4 border-gold pl-4 mb-4 uppercase tracking-tighter">Our Legacy in Textiles</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed mb-4">
+                        Changzhou Karyon Reton Textile Co., Ltd. is a premier manufacturer located in the textile heartland of China. With over 20 years of expertise, we specialize in high-end Raschel blankets designed specifically for the aesthetic preferences and quality demands of the Middle East and African markets.
+                    </p>
+                    <ul class="space-y-3 text-xs font-semibold text-emerald-800">
+                        <li class="flex items-center gap-2"><span class="text-gold">✦</span> ISO 9001 & Oeko-Tex Standard 100 Certified</li>
+                        <li class="flex items-center gap-2"><span class="text-gold">✦</span> Specialized in 4kg-10kg Ultra-Heavy Blankets</li>
+                        <li class="flex items-center gap-2"><span class="text-gold">✦</span> Monthly Capacity: 50,000+ Premium Pieces</li>
+                        <li class="flex items-center gap-2"><span class="text-gold">✦</span> Strategic Proximity to Shanghai Port (180km)</li>
+                    </ul>
+                </div>
+
+                <!-- 核心数据展示 -->
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-emerald-900 text-white p-4 rounded-lg text-center border-t-2 border-gold">
+                        <div class="text-xl font-bold text-gold">20+</div>
+                        <div class="text-[8px] uppercase tracking-widest">Years Exp.</div>
+                    </div>
+                    <div class="bg-emerald-900 text-white p-4 rounded-lg text-center border-t-2 border-gold">
+                        <div class="text-xl font-bold text-gold">100%</div>
+                        <div class="text-[8px] uppercase tracking-widest">Eco-Dyes</div>
+                    </div>
+                    <div class="bg-emerald-900 text-white p-4 rounded-lg text-center border-t-2 border-gold">
+                        <div class="text-xl font-bold text-gold">8.5kg+</div>
+                        <div class="text-[8px] uppercase tracking-widest">Heavy Expert</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧图片区 -->
+            <div class="space-y-2 w-[7.5cm]">
+                <div class="product-image-placeholder h-[6.84cm] w-[7.5cm] flex items-center justify-center bg-[#E5E7EB] overflow-hidden rounded-xl border-0">
+                    <img src="/image/home1.jpg" class="w-full h-full object-cover" />
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部联系信息 -->
+        <div class="mt-auto pt-8 border-t border-emerald-900/20 flex justify-between items-end">
+            <div class="text-[10px] text-gray-500 space-y-1">
+                <p class="font-bold text-emerald-900">Changzhou Karyon-reton textile Co., Ltd.</p>
+                <p class="font-bold text-emerald-900">Email: sales@karyon-reton.com</p>
+                <p class="font-bold text-emerald-900">Web: www.karyon-reton.com</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="text-right">
+                    <p class="text-[9px] font-bold text-emerald-900 uppercase">Contact Sales Director</p>
+                    <p class="text-xs text-emerald-700 font-bold">+86 138-XXXX-XXXX</p>
+                </div>
+				<div class="w-20 h-20 p-0 m-0 bg-transparent border-none flex items-center justify-center">
+					<img src="/image/qrcode.jpg" alt="WhatsApp QR Code" class="w-full h-full object-contain">
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 反面：产品展示与参数 -->
+    <div class="page p-12">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl text-emerald-900 uppercase tracking-widest">Our Premium Collections</h2>
+            <div class="h-1 w-20 bg-gold mx-auto mt-2"></div>
+        </div>
+
+        <!-- 产品网格 -->
+		 <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+            <div class="space-y-2 w-[8.5cm]">
+                <div class="product-image-placeholder h-[6.84cm] w-[8.5cm] flex items-center justify-center bg-[#E5E7EB] overflow-hidden rounded-xl border-2 border-dashed border-gray-400">
+                    <img src="/image/ME1.jpg" class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-xl font-bold text-black mt-2">Royal Arabic Collection</h4>
+                <ul class="text-[10px] text-gray-500 flex justify-between mt-1">
+                    <li>• Size: 220x240cm</li>
+                    <li>• Weight: 6.0-9.0kg</li>
+                </ul>
+            </div>
+            <div class="space-y-2 w-[8.5cm]">
+                <div class="product-image-placeholder h-[6.84cm] w-[8.5cm] flex items-center justify-center bg-[#E5E7EB] overflow-hidden rounded-xl border-2 border-dashed border-gray-400">
+                    <img src="/image/AF1.jpg" class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-xl font-bold text-black mt-2">African Vibrant Series</h4>
+                <ul class="text-[10px] text-gray-500 flex justify-between mt-1">
+                    <li>• Size: 200x240cm</li>
+                    <li>• Weight: 3.5-5.5kg</li>
+                </ul>
+            </div>
+            <div class="space-y-2 w-[8.5cm]">
+                <div class="product-image-placeholder h-[6.84cm] w-[8.5cm] flex items-center justify-center bg-[#E5E7EB] overflow-hidden rounded-xl border-2 border-dashed border-gray-400">
+                    <img src="/image/modern1.jpg" class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-xl font-bold text-black mt-2">Modern Solid Embossed</h4>
+                <ul class="text-[10px] text-gray-500 flex justify-between mt-1">
+                    <li>• Size: 200x240cm</li>
+                    <li>• Weight: 3.5-5.5kg</li>
+                </ul>
+            </div>
+            <div class="space-y-2 w-[8.5cm]">
+                <div class="product-image-placeholder h-[6.84cm] w-[8.5cm] flex items-center justify-center bg-[#E5E7EB] overflow-hidden rounded-xl border-2 border-dashed border-gray-400">
+                    <img src="/image/suite1.jpg" class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-xl font-bold text-black mt-2">Luxury Suite Series</h4>
+                <ul class="text-[10px] text-gray-500 flex justify-between mt-1">
+                    <li>• Size: 200x240cm</li>
+                    <li>• Weight: 4.0-6.0kg</li>
+                </ul>
+            </div>		
+        </div>
+
+        <!-- 参数表 -->
+        <div class="emerald-gradient p-6 rounded-2xl border-b-4 border-gold shadow-xl">
+            <h3 class="text-white text-sm font-bold uppercase tracking-widest mb-4 flex items-center gap-2">
+                <span class="text-gold">■</span> Technical Specifications
+            </h3>
+            <table class="w-full text-[10px] text-left text-white/90">
+                <tr class="border-b border-white/20">
+                    <th class="py-2 text-gold">Property</th>
+                    <th class="py-2 text-gold">Specifications</th>
+                </tr>
+                <tr class="border-b border-white/10">
+                    <td class="py-2 font-bold uppercase">Material</td>
+                    <td class="py-2">100% Premium Polyester / High-Density Raschel Fabric</td>
+                </tr>
+                <tr class="border-b border-white/10">
+                    <td class="py-2 font-bold uppercase">Ply</td>
+                    <td class="py-2">1-Ply (Single) / 2-Ply (Compound Double)</td>
+                </tr>
+                <tr class="border-b border-white/10">
+                    <td class="py-2 font-bold uppercase">Size</td>
+                    <td class="py-2">160x220cm / 200x240cm / 220x240cm (Customizable)</td>
+                </tr>
+                <tr class="border-b border-white/10">
+                    <td class="py-2 font-bold uppercase">Weight Range</td>
+                    <td class="py-2">2.0 kg to 10.0 kg (Super Heavy Specialist)</td>
+                </tr>
+                <tr>
+                    <td class="py-2 font-bold uppercase">Packaging</td>
+                    <td class="py-2">Vacuum Bales / Luxury PVC Gift Bags</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="mt-8 text-center italic text-emerald-900/50 text-xs">
+            "Karyon Reton - We Don't Just Make Blankets, We Deliver Warmth."
+        </div>
+    </div>
+
+</body>
+</html>

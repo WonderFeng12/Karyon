@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raschel Luxury | Premium B2B Wholesale</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1259a1",
+                        "gold": "#D4AF37",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111921",
+                        "surface-dark": "#1c2631",
+                        "accent-crimson": "#8B0000",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .islamic-pattern {
+            background-color: transparent;
+            background-image: radial-gradient(circle at center, #D4AF37 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111921;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0"
+  }
+}
+</script>
+
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

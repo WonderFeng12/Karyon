@@ -1,0 +1,8 @@
+{
+  "name": "Raschel Luxury Wholesale",
+  "description": "A premium B2B platform for high-end Raschel blankets, featuring product catalogs, wholesale inquiry systems, and an AI-powered trade assistant.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

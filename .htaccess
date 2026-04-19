@@ -1,0 +1,8 @@
+# 强制 .js 和 .mjs 正确MIME
+AddType application/javascript .js
+AddType application/javascript .mjs
+
+# 可选：修复模块加载缓存
+<IfModule mod_headers.c>
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+</IfModule>
