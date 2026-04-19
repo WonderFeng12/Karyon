@@ -18,14 +18,6 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, '.'),
       }
     },
-    // 👇 下面这段是修复你服务器MIME错误的关键
-    build: {
-      modulePreload: false,
-      rollupOptions: {
-        output: {
-          format: 'iife',
-        },
-      },
-    },
+
   };
 });
