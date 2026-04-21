@@ -100,7 +100,7 @@ const About: React.FC = () => {
           <h2 className="text-white text-3xl font-bold serif-title text-center mb-8">{t('solutions')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <a 
-              href="/solutionA" 
+              href="/solutionA.html" 
               className="block bg-white/5 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition-all group"
             >
               <div className="bg-gold/20 w-12 h-12 rounded-lg flex items-center justify-center text-gold mb-4 group-hover:bg-gold/30 transition-all text-xl">
@@ -110,7 +110,7 @@ const About: React.FC = () => {
               <p className="text-white/60 text-sm">{t('solutionADesc')}</p>
             </a>
             <a 
-              href="/solutionB" 
+              href="/solutionB.html" 
               className="block bg-white/5 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition-all group"
             >
               <div className="bg-gold/20 w-12 h-12 rounded-lg flex items-center justify-center text-gold mb-4 group-hover:bg-gold/30 transition-all text-xl">
@@ -120,7 +120,7 @@ const About: React.FC = () => {
               <p className="text-white/60 text-sm">{t('solutionBDesc')}</p>
             </a>
             <a 
-              href="/solutionC" 
+              href="/solutionC.html" 
               className="block bg-white/5 border border-white/10 rounded-xl p-6 hover:border-gold/50 transition-all group"
             >
               <div className="bg-gold/20 w-12 h-12 rounded-lg flex items-center justify-center text-gold mb-4 group-hover:bg-gold/30 transition-all text-xl">

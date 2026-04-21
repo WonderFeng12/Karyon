@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karyon Reton - Premium Raschel Blanket Brochure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap');
+
+        :root {
+            --royal-blue: #1A365D;
+            --desert-gold: #D4AF37;
+            --deep-burgundy: #721c24;
+            --page-bg: #F9F8F6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #E5E7EB;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            padding: 15mm;
+            margin: 10mm auto;
+            background-color: var(--page-bg) !important;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+        .gold-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--desert-gold), transparent);
+            margin: 20px 0;
+        }
+
+        .product-image-placeholder {
+            background-color: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .bg-royal { background-color: var(--royal-blue); }
+        .text-gold { color: var(--desert-gold); }
+        .border-gold { border-color: var(--desert-gold); }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; page-break-after: always; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page" id="front-page">
+        <div class="flex justify-between items-center border-b-2 border-gold pb-4">
+            <div>
+                <h1 class="text-4xl font-bold text-royal-blue tracking-tight">KARYON RETON</h1>
+                <p class="text-xs tracking-widest uppercase text-gray-500">Excellence Since 2004</p>
+            </div>
+        </div>
+
+        <div class="mt-6 text-center"> <h2 class="text-4xl text-royal-blue mb-3 leading-tight">Royal Comfort for <br><span class="text-gold">Every Home</span></h2> <p class="text-sm text-gray-600 italic">"The Leading Specialist in Heavy-Weight Raschel Blankets"</p> </div>
+
+        <div class="mt-6 flex justify-center"> <div class="product-image-placeholder h-[10cm] w-[16cm] shadow-lg"> <img src="/image/home.png" class="w-full h-full object-cover" />
+            </div>
+        </div>
+
+        <div class="mt-8 px-6"> <div class="flex flex-col items-center text-center space-y-4">
+                <h3 class="text-2xl text-royal-blue relative inline-block">
+                    Who We Are
+                    <div class="absolute -bottom-1 left-0 w-full h-1 bg-gold opacity-30"></div>
+                </h3>
+                <p class="text-gray-700 leading-relaxed text-sm max-w-2xl">
+                    <strong>Changzhou Karyon Reton Textile Co., Ltd.</strong> is a premier manufacturer located in the textile heartland of China. With over 20 years of expertise, we specialize in high-end Raschel blankets designed specifically for the aesthetic preferences and quality demands of the Middle East and African markets.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-3 gap-6 text-center"> <div class="p-4 border border-gray-200/50 rounded-lg">
+                <div class="text-3xl mb-2">⚖️</div>
+                <h4 class="font-bold text-royal-blue text-xs">HEAVY WEIGHT</h4>
+                <p class="text-[10px] text-gray-500 mt-1 leading-tight">Specialists in 4kg-10kg super thick blankets.</p>
+            </div>
+            <div class="p-4 border border-gray-200/50 rounded-lg">
+                <div class="text-3xl mb-2">🎨</div>
+                <h4 class="font-bold text-royal-blue text-xs">1000+ DESIGNS</h4>
+                <p class="text-[10px] text-gray-500 mt-1 leading-tight">Arabic florals and modern African patterns.</p>
+            </div>
+            <div class="p-4 border border-gray-200/50 rounded-lg">
+                <div class="text-3xl mb-2">🏭</div>
+                <h4 class="font-bold text-royal-blue text-xs">CAPACITY</h4>
+                <p class="text-[10px] text-gray-500 mt-1 leading-tight">200,000 pcs/month production capacity.</p>
+            </div>
+        </div>
+
+        <div class="mt-auto border-t-2 border-gold pt-6 flex items-center justify-between">
+            <div class="space-y-1">
+                <p class="text-sm font-bold text-royal-blue">Contact Us Today</p>
+                <p class="text-xs text-gray-600">CHANGZHOU KARYON-RETON TEXTILE Co., Ltd.</p>
+                <p class="text-xs text-gray-600">Email: sales@karyon-reton.com</p>
+                <p class="text-xs text-gray-600">Web: www.karyon-reton.com</p>
+            </div>
+            <div class="flex items-center gap-2 -mt-2">
+                <div class="w-24 h-24 p-0 m-0 flex items-center justify-center">
+                    <img src="/image/qrcode.jpg" alt="WhatsApp QR Code" class="w-full h-full object-contain">
+                </div>
+                <div class="w-24 h-24 p-0 m-0 flex items-center justify-center">
+                    <img src="/image/qrcode1.jpg" alt="WhatsApp QR Code" class="w-full h-full object-contain">
+                </div>
+                <div class="text-left">
+                    <p class="text-xs font-bold text-royal-blue">Scan QR code for inquiries</p>
+                    <p class="text-xs text-gray-500">+86 153-1251-8637</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page flex flex-col min-h-[297mm]" id="back-page">
+        <div class="bg-royal p-6 -mx-[15mm] -mt-[15mm] mb-6 text-center">
+            <h2 class="text-3xl text-white">Our Premium Collections</h2>
+            <p class="text-gold text-sm tracking-widest uppercase mt-1">Raschel · Cloud · Mink · Embossed</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+            <div class="space-y-2 w-[8.5cm]">
+                <div class="product-image-placeholder h-[6.84cm] w-[8.5cm] flex items-center justify-center bg-[#E5E7EB] overflow-hidden rounded-xl border-2 border-dashed border-gray-400">
+                    <img src="/image/ME.jpg" class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-xl font-bold text-black mt-2">JY2413 BLACK</h4>
+                <ul class="text-[10px] text-gray-500 flex justify-between mt-1">
+                    <li>• Size: 200x240cm</li>
+                    <li>• Weight: 3.2-10.0kg</li>
+                </ul>
+            </div>
+            <div class="space-y-2 w-[8.5cm]">
+                <div class="product-image-placeholder h-[6.84cm] w-[8.5cm] flex items-center justify-center bg-[#E5E7EB] overflow-hidden rounded-xl border-2 border-dashed border-gray-400">
+                    <img src="/image/AF.jpg" class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-xl font-bold text-black mt-2">NF353 COFFEE</h4>
+                <ul class="text-[10px] text-gray-500 flex justify-between mt-1">
+                    <li>• Size: 200x240cm</li>
+                    <li>• Weight: 3.2-10.0kg</li>
+                </ul>
+            </div>
+            <div class="space-y-2 w-[8.5cm]">
+                <div class="product-image-placeholder h-[6.84cm] w-[8.5cm] flex items-center justify-center bg-[#E5E7EB] overflow-hidden rounded-xl border-2 border-dashed border-gray-400">
+                    <img src="/image/modern1.jpg" class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-xl font-bold text-black mt-2">DJ907 RED</h4>
+                <ul class="text-[10px] text-gray-500 flex justify-between mt-1">
+                    <li>• Size: 200x240cm</li>
+                    <li>• Weight: 3.2-10.0kg</li>
+                </ul>
+            </div>
+            <div class="space-y-2 w-[8.5cm]">
+                <div class="product-image-placeholder h-[6.84cm] w-[8.5cm] flex items-center justify-center bg-[#E5E7EB] overflow-hidden rounded-xl border-2 border-dashed border-gray-400">
+                    <img src="/image/modern2.jpg" class="w-full h-full object-cover" />
+                </div>
+                <h4 class="text-xl font-bold text-black mt-2">JY2420 GREEN</h4>
+                <ul class="text-[10px] text-gray-500 flex justify-between mt-1">
+                    <li>• Size: 200x240cm</li>
+                    <li>• Weight: 3.2-10.0kg</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-6 w-full"> 
+            <h4 class="font-bold text-xs bg-royal text-white px-4 py-1.5 inline-block mb-2 transform -skew-x-12 uppercase tracking-wide">
+                Technical Specifications
+            </h4>
+            <table class="w-full text-[11px] border-collapse bg-transparent rounded-md overflow-hidden shadow-sm border-0" style="table-layout: fixed;">
+                <tbody class="text-gray-600">
+                    <tr class="h-8 border-b border-gray-100">
+                        <td class="px-4 py-1 font-bold text-gray-800 bg-gray-50 w-28 border-r border-gray-100">Material</td>
+                        <td class="px-4 py-1 border-r border-gray-200">100% Premium Polyester</td>
+                        <td class="px-4 py-1 font-bold text-gray-800 bg-gray-50 w-28 border-r border-gray-100">Weight Range</td>
+                        <td class="px-4 py-1">3.2 kg to 10.0 kg (Customizable)</td>
+                    </tr>
+                    <tr class="h-8 border-b border-gray-100">
+                        <td class="px-4 py-1 font-bold text-gray-800 bg-gray-50 border-r border-gray-100">Structure</td>
+                        <td class="px-4 py-1 border-r border-gray-200">1-Ply / 2-Ply Compound</td>
+                        <td class="px-4 py-1 font-bold text-gray-800 bg-gray-50 border-r border-gray-100">Process</td>
+                        <td class="px-4 py-1">Deep Embossed</td>
+                    </tr>
+                    <tr class="h-8">
+                        <td class="px-4 py-1 font-bold text-gray-800 bg-gray-50 border-r border-gray-100">Size</td>
+                        <td class="px-4 py-1 border-r border-gray-200">Up to 220x240cm</td>
+                        <td class="px-4 py-1 font-bold text-gray-800 bg-gray-50 border-r border-gray-100">Packaging</td>
+                        <td class="px-4 py-1">Vacuum Bales/Luxury PVC Gift Bags</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-auto">
+            <div class="bg-royal -mx-[15mm] -mb-[15mm] h-16 border-t-2 border-gold flex items-center justify-center text-center">
+                <p class="text-white text-[11px] font-bold italic tracking-[0.2em] uppercase leading-none w-full">
+                    "Karyon Reton - We Don't Just Make Blankets, We Deliver Warmth."
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
